@@ -34,6 +34,11 @@ public class Player : MonoBehaviour
        Vector3 direction = new Vector3(positionX, 0f, positionZ);
        //transform.Translate(direction * Time.deltaTime * _vitesse);
        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
+
+        if (direction != Vector3.zero)
+        {
+            transform.forward = direction * -1;
+        }
     }
 
     public void StopJoueur()
