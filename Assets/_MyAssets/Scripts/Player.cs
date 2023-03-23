@@ -35,9 +35,10 @@ public class Player : MonoBehaviour
        //transform.Translate(direction * Time.deltaTime * _vitesse);
        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
 
-        if (direction != Vector3.zero)
+     if (direction != Vector3.zero)
         {
-            transform.forward = direction * -1;
+            float targetAngle = Mathf.Atan2(positionX, positionZ) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
         }
     }
 
