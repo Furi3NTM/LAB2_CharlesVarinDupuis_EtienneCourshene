@@ -9,7 +9,11 @@ public class BodyHair : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Poil irrité");
+        if (!irritated)
+        {
+            irritated = true;
+            
+        }
     }
 
 }
