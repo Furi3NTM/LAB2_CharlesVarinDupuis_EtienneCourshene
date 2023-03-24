@@ -29,17 +29,29 @@ public class Player : MonoBehaviour
 
     private void MouvementsJoueur()
     {
-       float positionX = Input.GetAxis("Horizontal");
-       float positionZ = Input.GetAxis("Vertical");
-       Vector3 direction = new Vector3(positionX, 0f, positionZ);
-       //transform.Translate(direction * Time.deltaTime * _vitesse);
-       _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
+        float positionX = Input.GetAxis("Horizontal");
+        float positionZ = Input.GetAxis("Vertical");
+        Vector3 direction = new Vector3(positionX, 0f, positionZ);
+        //transform.Translate(direction * Time.deltaTime * _vitesse);
+        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
 
-     /*if (direction != Vector3.zero)
+        if (Input.GetKey("up"))
         {
-            float targetAngle = Mathf.Atan2(positionX, positionZ) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-        }*/
+            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+        else if (Input.GetKey("down"))
+        {
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+        else if (Input.GetKey("right"))
+        {
+            transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+        }
+        else if (Input.GetKey("left"))
+        {
+            transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+
+        }
     }
 
     public void StopJoueur()
