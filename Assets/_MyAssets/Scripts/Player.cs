@@ -50,7 +50,6 @@ public class Player : MonoBehaviour
         else if (Input.GetKey("left"))
         {
             transform.rotation = Quaternion.Euler(0f, 90f, 0f);
-
         }
     }
 
