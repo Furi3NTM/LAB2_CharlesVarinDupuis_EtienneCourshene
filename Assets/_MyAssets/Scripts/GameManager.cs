@@ -8,14 +8,29 @@ public class GameManager : MonoBehaviour
     //ATTRIBUTS
     private int _pointage;
 
+    //AWAKE
+    private void Awake()
+    {
+        int nbGameManager = FindObjectsOfType<GameManager>().Length;
+
+        if (nbGameManager > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+
+    }
 
     //START
     private void Start()
     {
         _pointage = 0;
+        _personnageABouge = false;
         Instruction();
     }
-
 
     //MÉTHODES
     private static void Instruction()
@@ -35,4 +50,6 @@ public class GameManager : MonoBehaviour
     {
         return _pointage;
     }
-}
+
+   
+  }
