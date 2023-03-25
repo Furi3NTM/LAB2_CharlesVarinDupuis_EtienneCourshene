@@ -398,6 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &289170775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -682,7 +683,6 @@ GameObject:
   - component: {fileID: 418130944}
   - component: {fileID: 418130943}
   - component: {fileID: 418130942}
-  - component: {fileID: 418130946}
   m_Layer: 0
   m_Name: Sol
   m_TagString: Untagged
@@ -769,18 +769,6 @@ Transform:
   m_Father: {fileID: 1975620668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &418130946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418130941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &463862173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,7 +1106,7 @@ MonoBehaviour:
   _vitesseRotationY: 0.3
   _vitesseRotationX: 0
   _vitesseRotationZ: 0
---- !u!114 &571356969
+--- !u!114 &571356965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1127,9 +1115,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 571356958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5640f8ff2114ad043b7edab85cb017a9, type: 3}
+  m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &573397651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1264,6 +1253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!108 &589556407
 Light:
   m_ObjectHideFlags: 0
@@ -1348,6 +1338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &605414457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1521,6 +1512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &689840924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1880,6 +1872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!108 &789534703
 Light:
   m_ObjectHideFlags: 0
@@ -1987,6 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &805295939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2053,7 +2047,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ddc626de5b4834e46bc73db5481f1d55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2092,7 +2086,7 @@ Transform:
   m_GameObject: {fileID: 805586836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.36, y: 19.9, z: 147.36}
-  m_LocalScale: {x: 8.5983, y: 0.37585, z: 1.8683}
+  m_LocalScale: {x: 8.5983, y: 6, z: 1.8683}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2147,6 +2141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &809923024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2215,6 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &866675107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2958,6 +2954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &1075188206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3286,6 +3283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1333885330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 157025860366658035, guid: 8f910a42a706d234ea50aaabc5bb9935, type: 3}
@@ -3329,7 +3327,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2718157632010692611, guid: cf621d06e0d05c74b887c3417541c604, type: 3}
   m_PrefabInstance: {fileID: 2718157633352975603}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1342631159
+--- !u!114 &1342631153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3338,9 +3336,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 615268289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5640f8ff2114ad043b7edab85cb017a9, type: 3}
+  m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &1364193375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3429,6 +3428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1409389496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3581,6 +3581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1464259199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 86965865fff17e6488483d125afa0d99, type: 3}
@@ -3603,6 +3604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1464259204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3993,6 +3995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1544671768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5111,6 +5114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1984314356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5218,6 +5222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &2078763384
 BoxCollider:
   m_ObjectHideFlags: 0
