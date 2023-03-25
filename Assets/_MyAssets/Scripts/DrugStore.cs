@@ -8,14 +8,16 @@ public class DrugStore : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("condom on");
 
         if (collision.gameObject.tag == "Player" && !_estActive)
         {
-            GameObject.Find("Condom").SetActive(true);
+            Debug.Log("condom on");
+            Renderer r1 = GameObject.Find("LowerCylinder").GetComponent<MeshRenderer>();
+            r1.enabled = true;
+            Renderer r2 = GameObject.Find("UpperCylinder").GetComponent<MeshRenderer>();
+            r2.enabled = true;
             _estActive = true;
         }
-        GameObject.Find("Condom").SetActive(true);
 
     }
 }

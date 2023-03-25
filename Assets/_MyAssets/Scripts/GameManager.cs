@@ -36,7 +36,10 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            GameObject.Find("Condom").SetActive(false);
+            Renderer r1 = GameObject.Find("LowerCylinder").GetComponent<MeshRenderer>();
+            r1.enabled = false;
+            Renderer r2 = GameObject.Find("UpperCylinder").GetComponent<MeshRenderer>();
+            r2.enabled = false;
         }
     }
 
