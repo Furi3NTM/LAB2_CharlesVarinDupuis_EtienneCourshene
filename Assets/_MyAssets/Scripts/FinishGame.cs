@@ -9,20 +9,17 @@ public class FinishGame : MonoBehaviour
     //Attributs
     private bool _toucher;
     private bool _finish;
-    private float _tempsDebut;
     private bool _personnageABouge;
 
     //Utiliser les m?thodes de d'autre classe
     private GameManager _gameManager;
     private Player _player;
 
-
     private void Start()
     {
         _toucher = false;
         _gameManager = FindObjectOfType<GameManager>();
         _player = FindObjectOfType<Player>();
-        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -32,7 +29,8 @@ public class FinishGame : MonoBehaviour
         {
 
             int erreurs = _gameManager.GetPointage();
-            float total = (Time.time + erreurs) - GetTemps();
+            double startTime = _gameManager.startTime;
+            double total = Time.time + erreurs - startTime;
 
             //Change la couleur du mur
             gameObject.GetComponent<MeshRenderer>().material.color = Color.yellow;
@@ -44,9 +42,9 @@ public class FinishGame : MonoBehaviour
             {
 
                 //Afficher les informations sur mon jeu
-                Debug.Log("BRAVO!, ton temps est de : " + Time.time + " secondes");
+                Debug.Log("BRAVO!, ton temps est de : " + (Time.time - startTime) + " secondes");
                 Debug.Log("Vous avez accroche " + erreurs + " obstacles");
-                Debug.Log("Votre temps est de " + total + " secondes");
+                Debug.Log("Votre temps total est donc de " + total + " secondes");
 
                 //Arreter le joueur
                 _player.StopJoueur();
@@ -58,24 +56,6 @@ public class FinishGame : MonoBehaviour
 
 
         }
-    }
-
-    public float GetTemps()
-    {
-        if (_personnageABouge)
-        {
-            return Time.time - _tempsDebut;
-        }
-        else
-        {
-            return 0f;
-        }
-    }
-
-    public void PersonnageABouge()
-    {
-        _personnageABouge = true;
-        _tempsDebut = Time.time;
     }
 
 

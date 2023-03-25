@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &28217456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,6 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &337913061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,7 +1529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496491592}
   m_LocalRotation: {x: 0.34202012, y: 0.000029042349, z: 0.0001743655, w: 0.9396927}
-  m_LocalPosition: {x: 7.9582615, y: 7.307876, z: -18.860445}
+  m_LocalPosition: {x: -34.80174, y: 7.307876, z: -63.660446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2046,6 +2048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &686687560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2495,6 +2498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &915900608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2976,6 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &1086707228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3128,6 +3133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &1093706723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3400,7 +3406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214647924}
   m_LocalRotation: {x: 0.34202012, y: 0.000029042349, z: 0.0001743655, w: 0.9396927}
-  m_LocalPosition: {x: 7.9582615, y: 7.307876, z: -18.860445}
+  m_LocalPosition: {x: -34.80174, y: 7.307876, z: -63.660446}
   m_LocalScale: {x: 1, y: 1, z: 1.0000004}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4640,6 +4646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1734831892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4795,6 +4802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1739113287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5164,6 +5172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e447ea111f1dd8049a5c32dc4ace4dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1939963936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5575,7 +5584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 356820068450082002, guid: fa7da315fc912584bbf29b7ca153dd4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.96
+      value: -34.8
       objectReference: {fileID: 0}
     - target: {fileID: 356820068450082002, guid: fa7da315fc912584bbf29b7ca153dd4c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5583,7 +5592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 356820068450082002, guid: fa7da315fc912584bbf29b7ca153dd4c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.2
+      value: -56
       objectReference: {fileID: 0}
     - target: {fileID: 356820068450082002, guid: fa7da315fc912584bbf29b7ca153dd4c, type: 3}
       propertyPath: m_LocalRotation.w
